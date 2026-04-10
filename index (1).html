@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jensi Sojitra — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>JS<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home"         class="nav-link active">Home</a></li>
+          <li><a href="#about"        class="nav-link">About</a></li>
+          <li><a href="#projects"     class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact"      class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="src/Jensi_Sojitra_Resume.pdf" download="src/Jensi_Sojitra_Resume.pdf" class="btn-resume">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home"         class="mob-link" data-close>Home</a>
+      <a href="#about"        class="mob-link" data-close>About</a>
+      <a href="#projects"     class="mob-link" data-close>Projects</a>
+      <a href="#certificates" class="mob-link" data-close>Certificates</a>
+      <a href="#contact"      class="mob-link" data-close>Contact</a>
+    </div>
+  </header>
+
+  <!-- ═══════════ HOME ═══════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-bg-dots"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-chip anim-fade-down">
+
+        </div>
+        <h1 class="hero-title anim-fade-up">
+          Hi, I'm<br><em>Jensi</em><br><em>Sojitra.</em>
+        </h1>
+        <p class="hero-tagline anim-fade-up delay-1">
+          <span id="typed-text"></span><span class="type-cursor">|</span>
+        </p>
+        <p class="hero-desc anim-fade-up delay-2">
+          I'm a <strong>third-year BSc IT student</strong> from Gujarat, India, just getting started with programming.
+          I enjoy building small projects, learning Python step by step, and exploring how AI works.
+          Still learning, but having a lot of fun doing it!
+        </p>
+        <div class="hero-btns anim-fade-up delay-3">
+          <a href="#projects" class="btn-primary">
+            <span>See My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <span>Say Hello</span>
+          </a>
+        </div>
+        <div class="hero-stats anim-fade-up delay-4">
+          <div class="stat-item">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right anim-fade-left">
+        <div class="hero-card-wrap">
+          <div class="hero-card">
+            <div class="hc-top">
+              <div class="hc-avatar">JS</div>
+              <div class="hc-online">
+                <span class="online-dot"></span>
+                Open to internships
+              </div>
+            </div>
+            <h3 class="hc-name">Jensi Sojitra</h3>
+            <p class="hc-bio">Learning Python &amp; building real projects 🚀</p>
+            <div class="hc-divider"></div>
+            <div class="hc-tags">
+              <span class="tag">🐍 Python</span>
+              <span class="tag">🐘 PHP</span>
+              <span class="tag">⚛️ React.js</span>
+              <span class="tag">🗄️ MySQL</span>
+              <span class="tag">☕ Java</span>
+              <span class="tag">🔧 Git</span>
+              <span class="tag">🌐 Joomla</span>
+            </div>
+            <div class="hc-foot">
+              <a href="https://github.com/jensi-sojitra20/" target="_blank" class="hc-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/jensi-sojitra-93548a341" target="_blank" class="hc-link">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+          <div class="hero-card-shadow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-left reveal-left">
+          <div class="section-label">// About Me</div>
+          <h2 class="section-heading">
+            A beginner who<br>loves <em>building</em><br>things.
+          </h2>
+          <p class="about-text">
+            Hey! I'm Jensi, a <strong>third-year BSc IT student</strong> at Gujarat Law Society University.
+            I started coding not too long ago and honestly, I'm still figuring things out — but that's what makes it exciting.
+          </p>
+          <p class="about-text">
+            I got into Python because it's beginner-friendly and super powerful. Right now I'm focusing on building
+            small real-world projects to practice what I learn, including a bit of <strong>machine learning</strong> and <strong>web development</strong>.
+          </p>
+          <p class="about-text">
+            Outside coding I enjoy exploring new tech, watching tutorials, and slowly making my projects better with each iteration.
+          </p>
+          <div class="goal-card reveal">
+            <div class="goal-icon">🎯</div>
+            <div>
+              <h4>My Current Goal</h4>
+              <p>Build enough real projects to land my first internship or entry-level role as a Python / Web Developer — and keep improving every single day.</p>
+            </div>
+          </div>
+          <div class="about-socials">
+            <a href="https://github.com/jensi-sojitra20/" target="_blank" class="soc-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jensi-sojitra-93548a341" target="_blank" class="soc-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:sojitrajensi20@gmail.com" class="soc-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="skills-box reveal-right">
+            <div class="box-header">
+              <span class="box-label">Skills I'm Learning</span>
+            </div>
+            <div class="skill-groups">
+
+              <div class="skill-group reveal delay-1">
+                <span class="sg-label">Languages</span>
+                <div class="skill-list">
+                  <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="skill-fill" data-w="72"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-php"></i>
+                    <span>PHP</span>
+                    <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-fill" data-w="55"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML &amp; CSS</span>
+                    <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Java &amp; C++</span>
+                    <div class="skill-bar"><div class="skill-fill" data-w="48"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-group reveal delay-2">
+                <span class="sg-label">Frameworks &amp; Platforms</span>
+                <div class="pill-row">
+                  <span class="spill orange">React.js</span>
+                  <span class="spill orange">Flask</span>
+                  <span class="spill orange">FastAPI</span>
+                  <span class="spill blue">MySQL</span>
+                  <span class="spill blue">Joomla</span>
+                  <span class="spill blue">XML</span>
+                  <span class="spill green">Pandas</span>
+                  <span class="spill green">Scikit-learn</span>
+                </div>
+              </div>
+
+              <div class="skill-group reveal delay-3">
+                <span class="sg-label">Tools</span>
+                <div class="pill-row">
+                  <span class="spill orange">Git</span>
+                  <span class="spill orange">GitHub</span>
+                  <span class="spill blue">Shell Scripting</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-label">// My Projects</div>
+        <h2 class="section-heading">Things I've <em>built</em><br>while learning.</h2>
+        <p class="section-sub">These are real projects I built to practice my skills. They're not perfect, but I'm proud of them and learning from each one.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Medi AI — FULL WIDTH ── -->
+        <article class="proj-card proj-featured reveal delay-1">
+          <div class="feat-inner">
+            <div class="feat-left">
+              <div class="proj-top">
+                <div class="proj-emoji">🧠</div>
+                <span class="proj-badge">Biggest Project</span>
+              </div>
+              <h3 class="proj-title">Medi AI</h3>
+              <p class="proj-role">AI Treatment Recommendation System</p>
+              <p class="proj-desc">
+                My most ambitious project so far. I built a web app that takes symptoms as input
+                and uses machine learning to predict possible diseases and suggest medicines.
+                Has separate login for patients, doctors, and admins.
+              </p>
+              <ul class="proj-points">
+                <li>Used Random Forest ML model to predict diseases</li>
+                <li>Three user roles: Patient, Doctor, Admin</li>
+                <li>Doctors can verify and approve patient cases</li>
+                <li>Backend built with FastAPI + MySQL</li>
+              </ul>
+            </div>
+            <div class="feat-right">
+              <div class="tech-tags">
+                <span>React</span><span>FastAPI</span><span>MySQL</span>
+                <span>Scikit-learn</span><span>Python</span>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/jensi-sojitra20/" target="_blank" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <a href="medi_ai.mp4" class="proj-btn proj-btn-fill">
+                  Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 2: AI Recipe Generator ── -->
+        <article class="proj-card reveal delay-2">
+          <div class="proj-top">
+            <div class="proj-emoji">🍽️</div>
+          </div>
+          <h3 class="proj-title">AI Recipe Generator</h3>
+          <p class="proj-role">Ingredient-to-Recipe Tool</p>
+          <p class="proj-desc">
+            A PHP website that gives you recipes and meal plans based on
+            ingredients you already have at home, using an API.
+            My first project using PHP and API integration.
+          </p>
+          <ul class="proj-points">
+            <li>Input ingredients, get recipe suggestions</li>
+            <li>Meal planning from available items</li>
+            <li>API-powered recipe data</li>
+          </ul>
+          <div class="tech-tags">
+            <span>PHP</span><span>HTML/CSS</span><span>API Integration</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/jensi-sojitra20/" target="_blank" class="proj-btn proj-btn-outline">
+              <i class="fa-brands fa-github"></i> View Code
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Project 3: SmartAgro Hub ── -->
+        <article class="proj-card reveal delay-3">
+          <div class="proj-top">
+            <div class="proj-emoji">🌾</div>
+          </div>
+          <h3 class="proj-title">SmartAgro Hub</h3>
+          <p class="proj-role">Digital Agriculture Portal</p>
+          <p class="proj-desc">
+            A digital agriculture portal I built on Joomla. It has crop advisory
+            modules, a marketplace for listings, and weather updates
+            for farmers.
+          </p>
+          <ul class="proj-points">
+            <li>Crop advisory &amp; guidance modules</li>
+            <li>Marketplace listings for farmers</li>
+            <li>Weather updates integration</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Joomla</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/jensi-sojitra20/" target="_blank" class="proj-btn proj-btn-outline">
+              <i class="fa-brands fa-github"></i> View Code
+            </a>
+          </div>
+        </article>
+
+        <!-- ── Project 4: Python Automation ── -->
+        <article class="proj-card reveal delay-4">
+          <div class="proj-top">
+            <div class="proj-emoji">⚙️</div>
+          </div>
+          <h3 class="proj-title">Python Automation Scripts</h3>
+          <p class="proj-role">Everyday Automation Tools</p>
+          <p class="proj-desc">
+            A small collection of Python scripts I wrote to automate boring
+            daily tasks — organising files, renaming folders in bulk,
+            and processing data from CSVs.
+          </p>
+          <ul class="proj-points">
+            <li>Bulk file renaming &amp; organiser</li>
+            <li>CSV data cleaning script</li>
+            <li>Scheduled task runner</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>Pandas</span><span>OS</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/jensi-sojitra20/" target="_blank" class="proj-btn proj-btn-outline">
+              <i class="fa-brands fa-github"></i> View Code
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CERTIFICATES ═══════════ -->
+  <section id="certificates" class="section certs-section">
+    <div class="container">
+      <div class="section-head reveal">
+        
+        <h2 class="section-heading">My <em>Certificates</em><br>&amp; achievements.</h2>
+        <p class="section-sub">Courses and job simulations I've completed from top companies. Each one taught me something new.</p>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- Accenture -->
+        <div class="cert-card reveal delay-1">
+          <div class="cert-preview">
+            <img src="src/accenture.png" alt="Accenture Certificate" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-platform"><i class="fa-solid fa-briefcase"></i> Accenture × Forage</span>
+            <h4 class="cert-name">Software Engineering Job Simulation</h4>
+            <span class="cert-date">July 17, 2025</span>
+            <div class="cert-skills">
+              <span>Architecture</span><span>Security</span><span>Testing</span><span>Agile</span>
+            </div>
+          </div>
+          <a href="src/accenture.png" target="_blank" class="cert-view-btn">
+            View <i class="fa-solid fa-external-link"></i>
+          </a>
+        </div>
+
+        <!-- AWS -->
+        <div class="cert-card reveal delay-2">
+          <div class="cert-preview cert-preview-pdf">
+              <div class="pdf-placeholder aws-style">
+              <i class="fa-brands fa-aws"></i>
+                <span>AWS Certificate</span>
+                          <img src="src/aws.png" alt="aws Certificate" />
+                 </div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-platform"><i class="fa-brands fa-aws"></i> AWS × Forage</span>
+            <h4 class="cert-name">Solutions Architecture Job Simulation</h4>
+            <span class="cert-date">August 11, 2025</span>
+            <div class="cert-skills">
+              <span>Cloud Architecture</span><span>Scalable Systems</span>
+            </div>
+          </div>
+          <a href="src/aws.pdf" target="_blank" class="cert-view-btn">
+            View <i class="fa-solid fa-external-link"></i>
+          </a>
+        </div>
+
+        <!-- Tata -->
+        <div class="cert-card reveal delay-3">
+          <div class="cert-preview">
+            <img src="src/tata.png" alt="Tata Certificate" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-platform"><i class="fa-solid fa-chart-bar"></i> Tata × Forage</span>
+            <h4 class="cert-name">Data Visualisation: Empowering Business with Effective Insights</h4>
+            <span class="cert-date">July 22, 2025</span>
+            <div class="cert-skills">
+              <span>Data Viz</span><span>Business Insights</span>
+            </div>
+          </div>
+          <a href="src/tata.png" target="_blank" class="cert-view-btn">
+            View <i class="fa-solid fa-external-link"></i>
+          </a>
+        </div>
+
+        <!-- HCL GUVI -->
+        <div class="cert-card reveal delay-4">
+          <div class="cert-preview">
+            <img src="src/HCL GUVI.png" alt="HCL GUVI Certificate" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-platform"><i class="fa-solid fa-robot"></i> GUVI × HCL</span>
+            <h4 class="cert-name">India AI Impact Buildathon — Certificate of Participation</h4>
+            <span class="cert-date">February 16, 2026</span>
+            <div class="cert-skills">
+              <span>AI Problem Solving</span><span>40,000+ Participants</span>
+            </div>
+          </div>
+          <a href="src/HCL GUVI.png" target="_blank" class="cert-view-btn">
+            View <i class="fa-solid fa-external-link"></i>
+          </a>
+        </div>
+
+        <!-- Microsoft Power BI -->
+        <div class="cert-card reveal delay-5">
+          <div class="cert-preview cert-preview-pdf">
+            <div class="pdf-placeholder pdf-ms">
+              <i class="fa-brands fa-microsoft"></i>
+              <span>Microsoft Certificate</span>
+                        <img src="src/power bi.png" alt="power bi Certificate" />
+
+            </div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-platform"><i class="fa-brands fa-microsoft"></i> Microsoft Elevate × Koenig</span>
+            <h4 class="cert-name">Create a Dashboard with Power BI — Workshop</h4>
+            <span class="cert-date">Nov 3–4, 2025</span>
+            <div class="cert-skills">
+              <span>Power BI</span><span>Data Dashboard</span>
+            </div>
+          </div>
+          <a href="src/powe bi.pdf
+          " target="_blank" class="cert-view-btn">
+            View <i class="fa-solid fa-external-link"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-left reveal-left">
+          <div class="section-label">// Contact</div>
+          <h2 class="section-heading">Let's <em>talk!</em></h2>
+          <p class="contact-intro">
+            I'm always happy to connect — whether you have an opportunity, a project idea,
+            or just want to say hi. Any feedback or advice is also very welcome!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:sojitrajensi20@gmail.com" class="contact-link">
+              <div class="cl-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">Email me at</span>
+                <span class="cl-value">sojitrajensi20@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow"></i>
+            </a>
+            <a href="https://github.com/jensi-sojitra20/" target="_blank" class="contact-link">
+              <div class="cl-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">Check out my code</span>
+                <span class="cl-value">github.com/jensi-sojitra20</span>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jensi-sojitra-93548a341" target="_blank" class="contact-link">
+              <div class="cl-icon cl-icon-blue"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">Connect with me</span>
+                <span class="cl-value">Jensi Sojitra</span>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow"></i>
+            </a>
+            <a href="tel:+919328647517" class="contact-link">
+              <div class="cl-icon cl-icon-green"><i class="fa-solid fa-phone"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">Call me</span>
+                <span class="cl-value">+91 93286 47517</span>
+              </div>
+              <i class="fa-solid fa-arrow-right cl-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-right">
+          <div class="contact-form-wrap">
+            <form id="contactForm">
+              <div class="form-header">
+                <h3>Send a message</h3>
+                <p>I usually reply within a day or two.</p>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="name" placeholder="Your name" required />
+                  <span class="field-err" id="err-name"></span>
+                </div>
+                <div class="form-group">
+                  <label for="femail">Email</label>
+                  <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+                  <span class="field-err" id="err-email"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="fmsg">Message</label>
+                <textarea id="fmsg" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+                <span class="field-err" id="err-msg"></span>
+              </div>
+              <button type="submit" class="btn-send" id="sendBtn">
+                <span id="sendBtnTxt">Send Message</span>
+                <i class="fa-solid fa-paper-plane" id="sendBtnIcon"></i>
+              </button>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">🎉</div>
+              <h4>Message sent!</h4>
+              <p>Thanks for reaching out. I'll get back to you soon.</p>
+              <button class="btn-send-again" id="sendAgainBtn">Send another message</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Jensi Sojitra.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/jensi-sojitra20/"                     target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jensi-sojitra-93548a341"      target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:sojitrajensi20@gmail.com"                                          title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
